@@ -1,0 +1,77 @@
+h1{
+    color: goldenrod;
+    text-align: center;
+}
+
+
+#Heading-section-top{           /* this is an id */
+    color: green;
+}
+
+
+h2{color:rgb(6, 57, 225)}
+
+.font-color-pink{               /* this is a class */
+    color:pink;
+}
+
+body {
+    color:black
+}
+
+body {                      /*background image*/
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThwKfYbjSpqSZgqSilie4spQFf0UHn_AczfA&s");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+}
+
+u{
+    text-decoration-style:wavy;
+}
+
+/* bootstrap is mobile first */
+
+.font-size-10{
+    font-size: 2rem;
+}
+
+
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif, cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.text-indent{
+    text-indent: 40px;
+}
+
+.word-spacing{
+    word-spacing: 5px;
+}
+
+a {
+    color:blueviolet
+}
+
+a:hover {
+    color: yellow
+}
+
+.background-color {
+    background-color: aquamarine;
+}
+
+.button {
+    background-color: greenyellow;
+    color: rgb(0, 0, 0);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ 
