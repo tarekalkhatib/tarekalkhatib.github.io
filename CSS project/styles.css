@@ -1,0 +1,150 @@
+
+/* CSS for styling images, rounded borders and shadow*/
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* THIS IS THE CSS FOR GLOBAL NAVIGATION AND DROPDOWN MENU*/
+header {
+    background-color: #b9c8c28f;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #806e6ec2;
+    min-width: 150px;
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li .dropdown-content li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* END CODE HEADER AND GLOBAL NAV*/
+
+
+/*CSS For styling text in main sections*/
+main {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/*video on homepage*/
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+/*class to help style headers*/
+.big-font {
+    font-size: 28px; 
+    font-weight: bold; 
+}
+
+/* class content: CSS code for styling and making sure the text over the video is staying there */
+.content {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+}
+
+/* additional content class: for displaying projects side-by side*/
+.additional-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 300px;
+    margin-top: 100vh;
+    background-color: white;
+    padding: 40px;
+    color: black;
+}
+
+
+/* class reso-img: to help style reso image as a background image that doesnt move*/
+.reso-img {
+    background-image: url("../Assets/Screenshot 2024-12-01 at 12.40.08.png");
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain; 
+    background-attachment: scroll;
+}
+
+/* class to highlight headings for reso project*/
+.highlight {   
+    background-color: blue;
+    color: black;
+    padding: 2px;
+}
+
+/*class to highlight headings for gearfrog project*/
+.highlight2 {   
+    background-color: rgb(25, 149, 132);
+    color: rgb(254, 254, 254);
+    padding: 2px;
+}
+
+/*class to display flexbox for gearfrog to make it display side-by side*/
+.additional-content-gf {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: white;
+    padding: 40px;
+    color: black;
+}
