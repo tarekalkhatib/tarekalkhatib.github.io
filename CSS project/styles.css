@@ -38,7 +38,7 @@ nav ul li .dropdown-content {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #806e6ec2;
+    background-color:black;
     min-width: 150px;
     z-index: 1;
     list-style: none;
@@ -141,10 +141,56 @@ main {
 /*class to display flexbox for gearfrog to make it display side-by side*/
 .additional-content-gf {
     display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+    background-color: white;
+    padding: 40px;
+    color: black;
+    border: 2px solid black;
+}
+
+/* class targeting children items within flexbox for gearfrog*/
+.additional-content-gf > * {
+    flex: 1; 
+    min-width: 200px; 
+    padding: 20px; 
+    border: 2px solid black; 
+    text-align: center; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    box-sizing: border-box; /
+}
+
+/* class to define flexbox for pdf and figma prototype*/
+.flexbox-reso {
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
     background-color: white;
     padding: 40px;
     color: black;
+}
+
+footer {
+    position: relative; /* Default position */
+    margin-top: 20px; /* Adds space above the footer */
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.footer-home {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    z-index: 100; /* Ensure it stays above other content */
 }
